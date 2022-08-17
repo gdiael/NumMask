@@ -19,7 +19,7 @@ function getSubmitButton() {
     // caso sejam adicionados mais botões, deve ser revisto esse código
     try {
         let collection = document.getElementsByClassName("elementor-button elementor-size-sm elementor-animation-grow");
-        if(collection.lenght > 0){
+        if(collection.length > 0){
             return collection.item(0);
         }
     } catch(ex) {
@@ -41,8 +41,8 @@ window.onload = function(){
         let phoneStr = e.target.value;
         phoneStr = mtel(phoneStr);
         e.target.value = phoneStr;
-        if(phoneStr.lenght == 16) {
-            alert('ok');
-        }
+        // if(phoneStr.length == 16) {
+        //     alert('ok');
+        // }
     });
 }
