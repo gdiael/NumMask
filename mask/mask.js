@@ -29,20 +29,13 @@ function getSubmitButton() {
 }
 
 window.onload = function(){
-    // desativa o botão de enviar
-    // let submitBt = getSubmitButton();
-    // submitBt.disabled = true;
     // pega a referência para o elemento 'input' do telefone
     let phoneInput = getById('form-field-telefone');
     // não sei o que este trecho está pretendendo fazer, por isso comentei ele pra fora
-    // phoneField.pattern = ".{15,}"; 
     phoneInput.maxlength = 16;
     phoneInput.addEventListener('input', function(e) {
         let phoneStr = e.target.value;
         phoneStr = mtel(phoneStr);
         e.target.value = phoneStr;
-        // if(phoneStr.length == 16) {
-        //     alert('ok');
-        // }
     });
 }
