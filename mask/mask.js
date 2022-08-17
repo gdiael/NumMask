@@ -36,7 +36,7 @@ window.onload = function(){
     let phoneInput = getById('form-field-telefone');
     // não sei o que este trecho está pretendendo fazer, por isso comentei ele pra fora
     // phoneField.pattern = ".{15,}"; 
-    phoneInput.maxlenght = 16;
+    phoneInput.maxlength = 16;
     phoneInput.addEventListener('input', function(e) {
         let phoneStr = e.target.value;
         phoneStr = mtel(phoneStr);
